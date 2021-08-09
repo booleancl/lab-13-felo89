@@ -1,0 +1,24 @@
+{
+  "name": "javascript-lab13",
+  "version": "1.0.0",
+  "description": "## Módulo 5: Javascript en el Servidor Conocer las diferentes posibilidades de Javascript en el Servidor.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "test:ci": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/booleancl/javascript-lab12.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/booleancl/javascript-lab12/issues"
+  },
+  "homepage": "https://github.com/booleancl/javascript-lab12#readme",
+  "dependencies": {
+    "jest": "^27.0.6"
+  }
+}
