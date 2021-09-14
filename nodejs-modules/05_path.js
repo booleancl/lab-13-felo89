@@ -2,7 +2,7 @@ const path = require('path')
 
 function getPlatformPathDelimiter() {
   console.log(`DELIMITER ${path.delimiter}`)
-  //return path.delimiter
+  return path.delimiter
 }
 //getPlatformPathDelimiter()
 
@@ -11,7 +11,7 @@ function resolvePath() {
   console.log(
     `RESOLVE PATH: ${filePath}`
   )
-  //return filePath
+  return filePath
 }
 //resolvePath()
 
@@ -21,8 +21,8 @@ function joinPaths() {
     '/nodejs-modules',
     'hola.txt'
   ]
-  const filePath = path.join(__dirname,'..//','/nodejs-modules', 'hola.txt')
-  //const filePath = path.join(/* utilizar spread */)
+  // const filePath = path.join(__dirname,'..//','/nodejs-modules', 'hola.txt')
+  const filePath = path.join(...paths)
   console.log(
     `JOIN PATH: ${filePath}`
   )
@@ -38,12 +38,8 @@ function dirnamePath() {
     './hola.txt'
   )
   const pathDirname = path.dirname(filePath)
-  
-  console.log(
-    `GET DIRNAME FROM PATH ${pathDirname}`
-  )
 
-  return
+  return pathDirname
 }
 //dirnamePath()
 
@@ -53,21 +49,14 @@ function getExtension() {
   //const fileExtension = path.extname(__filename)
   const fileExtension = path.extname(filePath)
   
-  console.log(
-    `EXTENSION NAME FROM PATH ${fileExtension}`
-  )
-
-  return
+  return fileExtension
 }
 //getExtension()
 
 function normalizePath() {
   const normalizedPath = path.normalize(`${__dirname}//repl-scripts/../repl-scripts/01_hello.js`)
   
-  console.log(
-    `NORMALIZE PATH ${normalizedPath}`
-  )
-  return
+  return normalizedPath
 }
 //normalizePath()
 

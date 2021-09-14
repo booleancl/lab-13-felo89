@@ -1,0 +1,1 @@
+NodeJS writes in filesystem sync
